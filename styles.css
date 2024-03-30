@@ -64,3 +64,10 @@ body {
     width: 100%;
   }
   
+  .profile-pic img {
+    width: 100%; /* This will make the image responsive, adjusting to the width of its container */
+    max-width: 200px; /* This will limit the image width to 200px even if its container is wider */
+    height: auto; /* This will maintain the aspect ratio of the image */
+    display: block; /* This will prevent inline spacing issues */
+    margin: 0 auto; /* This will center the image within its container */
+  }
