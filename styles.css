@@ -71,3 +71,17 @@ body {
     display: block; /* This will prevent inline spacing issues */
     margin: 0 auto; /* This will center the image within its container */
   } 
+  .project-link {
+    color: #3944BC; /* A distinct color for your link */
+    text-decoration: none; /* Remove the default underline */
+    font-weight: bold; /* Make it bold */
+    border-radius: 5px; /* Rounded corners */
+    padding: 3px 6px; /* Some padding for a button-like appearance */
+    transition: all 0.3s ease; /* Transition for smooth color change */
+  }
+  
+  .project-link:hover {
+    color: #02CCFE; /* Change text color on hover */
+    text-decoration: underline; /* Add underline on hover */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3); /* Darken the shadow for a "lifting" effect */
+  }
