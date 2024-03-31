@@ -4,6 +4,12 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+  --main-bg-color: #f4f4f4;
+  --primary-text-color: #333;
+  --link-color: #3944BC;
+  --link-hover-color: #02CCFE;
+}
 
 .container {
     width: 80%;

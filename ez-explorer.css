@@ -11,14 +11,15 @@ body {
 }
 
 .blog-post-preview {
+    display: flex;
+    align-items: center; /* Centers items vertically */
     background: #fff;
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    display: block;
-    color: #333;
     text-decoration: none;
+    color: #333;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -46,4 +47,15 @@ body {
 .blog-summary {
     font-size: 16px;
     line-height: 1.4;
+}
+
+.blog-text {
+    flex: 1; /* Allows text to fill available space */
+}
+
+.blog-image {
+    width: 120px; /* Example width, adjust as necessary */
+    height: auto;
+    margin-left: 20px; /* Adds some space between the text and the image */
+    border-radius: 8px; /* Optional: rounds the corners of the image */
 }
