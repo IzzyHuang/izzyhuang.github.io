@@ -1,108 +1,108 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 :root {
-  --main-bg-color: #f4f4f4;
-  --primary-text-color: #333;
-  --link-color: #3944BC;
-  --link-hover-color: #02CCFE;
+--main-bg-color: #f4f4f4;
+--primary-text-color: #333;
+--link-color: #3944BC;
+--link-hover-color: #02CCFE;
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 header {
-    background: #333;
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
+  background: #333;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    background: #444;
+  display: flex;
+  justify-content: center;
+  background: #444;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
 }
 
 nav a:hover {
-    background: #555;
+  background: #555;
 }
 
 .content {
-    display: flex;
-    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
-    justify-content: space-between;
-    margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .main-content {
-    flex: 3;
-    padding: 20px;
+  flex: 3;
+  padding: 20px;
 }
 
 .sidebar {
-    flex: 1;
-    background: #f4f4f4;
-    padding: 20px;
-    margin-left: 20px;
-    /* Responsive adjustments */
-    max-width: 400px; /* Maximum width of the sidebar */
-    width: 100%; /* Allows the sidebar to be flexible */
+  flex: 1;
+  background: #f4f4f4;
+  padding: 20px;
+  margin-left: 20px;
+  /* Responsive adjustments */
+  max-width: 400px; /* Maximum width of the sidebar */
+  width: 100%; /* Allows the sidebar to be flexible */
 }
 
 footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .profile-pic img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .project-link {
-    color: #3944BC;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+  color: #3944BC;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 .project-link:hover {
-    color: #02CCFE;
-    text-decoration: underline;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  color: #02CCFE;
+  text-decoration: underline;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
 }
 
 /* Responsive design adjustments */
 @media (max-width: 768px) {
-    .content {
-        flex-direction: column; /* Stack content vertically on smaller screens */
-    }
-    
-    .sidebar {
-        margin-left: 0; /* Remove margin on smaller screens */
-    }
+  .content {
+      flex-direction: column; /* Stack content vertically on smaller screens */
+  }
+  
+  .sidebar {
+      margin-left: 0; /* Remove margin on smaller screens */
+  }
 }
