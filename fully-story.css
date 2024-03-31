@@ -1,0 +1,51 @@
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.75;
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    color: #333;
+}
+
+.story {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.story-header {
+    text-align: center;
+}
+
+.story-hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.story-title {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.story-date {
+    font-size: 16px;
+    color: #666;
+}
+
+.story-content p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.story-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+}
