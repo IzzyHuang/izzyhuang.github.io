@@ -1,87 +1,102 @@
-/* styles.css */
-
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .container {
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  
-  header {
-    background: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center;
-    background: #444;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-  }
-  
-  nav a:hover {
-    background: #555;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #444;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  background: #555;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.main-content {
+  flex: 3;
+  padding: 20px;
+}
+
+.sidebar {
+  flex: 1;
+  background: #f4f4f4;
+  padding: 20px;
+  margin-left: 20px;
+  /* Responsive adjustments */
+  max-width: 400px; /* Maximum width of the sidebar */
+  width: 100%; /* Allows the sidebar to be flexible */
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.profile-pic img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.project-link {
+  color: #3944BC;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  color: #02CCFE;
+  text-decoration: underline;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
   .content {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .main-content {
-    flex: 3;
-    padding: 20px;
+      flex-direction: column; /* Stack content vertically on smaller screens */
   }
   
   .sidebar {
-    flex: 1;
-    background: #f4f4f4;
-    padding: 20px;
-    margin-left: 20px;
+      margin-left: 0; /* Remove margin on smaller screens */
   }
-  
-  footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  .profile-pic img {
-    width: 100%; /* This will make the image responsive, adjusting to the width of its container */
-    max-width: 200px; /* This will limit the image width to 200px even if its container is wider */
-    height: auto; /* This will maintain the aspect ratio of the image */
-    display: block; /* This will prevent inline spacing issues */
-    margin: 0 auto; /* This will center the image within its container */
-  } 
-  .project-link {
-    color: #3944BC; /* A distinct color for your link */
-    text-decoration: none; /* Remove the default underline */
-    font-weight: bold; /* Make it bold */
-    border-radius: 5px; /* Rounded corners */
-    padding: 3px 6px; /* Some padding for a button-like appearance */
-    transition: all 0.3s ease; /* Transition for smooth color change */
-  }
-  
-  .project-link:hover {
-    color: #02CCFE; /* Change text color on hover */
-    text-decoration: underline; /* Add underline on hover */
-    box-shadow: 0 3px 6px rgba(0,0,0,0.3); /* Darken the shadow for a "lifting" effect */
-  }
+}
