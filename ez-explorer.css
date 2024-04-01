@@ -1,3 +1,9 @@
+/* font guide */
+/* title: Playfair Display */
+/* good read: EB Garamond */
+/* stylish:  Libre Baskerville --> Lobster --> Indie Flower */
+/* Cute: Ubuntu, Source Sans Pro, Exo 2 */
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -28,7 +34,7 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.blog-title, .blog-date, .blog-summary {
+.blog-title, .blog-date, .blog-genre, .blog-summary {
     margin: 0;
     padding: 0;
 }
@@ -36,12 +42,30 @@ body {
 .blog-title {
     font-size: 24px;
     margin-bottom: 10px;
+    font-family: 'Playfair Display', serif; 
 }
-
-.blog-date {
+.date-and-genre {
+    display: flex;
+    justify-content: space-between; /* This will place date on the left and genre on the right */
+    align-items: center; /* To vertically center the contents */
+    width: 100%; /* Ensure the container spans the full width */
+}
+.blog-date{
     font-size: 16px;
     color: #666;
     margin-bottom: 15px;
+    margin-right: auto;
+    font-family: 'Lobster', cursive;
+}
+
+.blog-genre {
+    font-size: 16px;
+    color: #3944BC;
+    margin-bottom: 15px;
+    white-space: nowrap; /* Prevent genre from wrapping to a new line */
+    margin-left: auto;
+    font-weight: bold;
+    font-family: 'Ubuntu', cursive;
 }
 
 .blog-summary {
@@ -51,6 +75,7 @@ body {
 
 .blog-text {
     flex: 1; /* Allows text to fill available space */
+    font-family: 'Libre Baskerville', cursive;
 }
 
 .blog-image {
