@@ -6,10 +6,14 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    background: #f4f4f4;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('images/skydiving.jpg'); /* Path to your image */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Stay fixed during scrolling */
+  }
 
 .blog-posts {
     max-width: 800px;
