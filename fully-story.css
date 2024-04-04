@@ -1,51 +1,64 @@
 body {
-    font-family: 'Georgia', serif;
-    line-height: 1.75;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #fafafa;
+    background-color: #f0f0f0;
+}
+
+header, footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.blog-post {
+    background-color: #fff;
+    margin: 20px auto; /* Center the blog post on the page */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 800px; /* Restrict the maximum width */
+}
+
+h1, h2, .subtitle, .post-meta {
     color: #333;
 }
 
-.story {
-    width: 80%;
-    max-width: 800px;
-    margin: 40px auto;
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-radius: 8px;
+p {
+    line-height: 1.6;
 }
 
-.story-header {
-    text-align: center;
+.content-image-wrapper {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between text and image */
+    margin-bottom: 20px; /* Add some space between sections */
 }
 
-.story-hero-image {
-    max-width: 100%;
+.text-content {
+    flex: 1; /* Allows text content to fill available space */
+    padding-right: 20px; /* Adds some space between the text and the image */
+}
+
+figure {
+    flex-basis: 40%; /* Set a base width for images */
+    text-align: center; /* Center align the figure content */
+}
+
+figure img {
+    width: 120px; /* Example width, adjust as necessary */
     height: auto;
-    border-radius: 5px;
+    margin-left: 20px; /* Adds some space between the text and the image */
+    border-radius: 8px; /* Optional: rounds the corners of the image */
 }
 
-.story-title {
-    font-size: 28px;
-    margin-top: 20px;
-}
-
-.story-date {
-    font-size: 16px;
+figcaption {
+    margin-top: 8px; /* Space between the image and its caption */
+    font-style: italic;
     color: #666;
 }
 
-.story-content p {
-    margin: 20px 0;
-    text-align: justify;
-}
-
-.story-image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border-radius: 5px;
+/* Additional styles for the comments section, if needed */
+.comments h2 {
+    color: #333;
 }
