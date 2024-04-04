@@ -1,32 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
-
-header, footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #333;
-    color: #fff;
-}
-
-.blog-post {
-    background-color: #fff;
-    margin: 20px auto; /* Center the blog post on the page */
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    max-width: 800px; /* Restrict the maximum width */
-}
-
-h1, h2, .subtitle, .post-meta {
-    color: #333;
-}
-
-p {
-    line-height: 1.6;
-}
+/* Other styles remain the same */
 
 .content-image-wrapper {
     display: flex;
@@ -41,24 +13,21 @@ p {
 }
 
 figure {
-    flex-basis: 40%; /* Set a base width for images */
+    flex-basis: 25%; /* Adjusted to make the image container smaller */
     text-align: center; /* Center align the figure content */
+    margin: 0; /* Removes margin for figure */
 }
 
 figure img {
-    width: 120px; /* Example width, adjust as necessary */
-    height: auto;
-    margin-left: 20px; /* Adds some space between the text and the image */
-    border-radius: 8px; /* Optional: rounds the corners of the image */
+    max-width: 100%; /* Ensures image is responsive within the figure element */
+    max-height: 150px; /* New: Constrains the height of the image to make it smaller */
+    width: auto; /* Ensures width scales with the height */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners to the images */
 }
 
 figcaption {
     margin-top: 8px; /* Space between the image and its caption */
     font-style: italic;
     color: #666;
-}
-
-/* Additional styles for the comments section, if needed */
-.comments h2 {
-    color: #333;
 }
