@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('images/skydiving.jpg'); /* Path to your image */
+    background-image: url('images/adventurer.png'); /* Path to your image */
     background-size: cover; /* Cover the entire page */
     background-position: center; /* Center the background image */
     background-attachment: fixed; /* Stay fixed during scrolling */

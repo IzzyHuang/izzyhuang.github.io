@@ -1,33 +1,127 @@
-/* Other styles remain the same */
+/* font guide */
+/* title: Playfair Display */
+/* good read: EB Garamond */
+/* stylish:  Libre Baskerville --> Lobster --> Indie Flower */
+/* Cute: Ubuntu, Source Sans Pro, Exo 2 */
 
-.content-image-wrapper {
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('images/adventurer.png'); /* Path to your image */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Stay fixed during scrolling */
+  }
+
+.blog-posts {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blog-post-preview {
     display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: space-between; /* Space between text and image */
-    margin-bottom: 20px; /* Add some space between sections */
+    align-items: center; /* Centers items vertically */
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.text-content {
-    flex: 1; /* Allows text content to fill available space */
-    padding-right: 20px; /* Adds some space between the text and the image */
+
+
+.blog-title, .blog-date, .blog-genre, .blog-summary, .section-heading {
+    margin: 0;
+    padding: 0;
 }
 
-figure {
-    flex-basis: 25%; /* Adjusted to make the image container smaller */
-    text-align: center; /* Center align the figure content */
-    margin: 0; /* Removes margin for figure */
+.blog-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif; 
 }
-
-figure img {
-    max-width: 100%; /* Ensures image is responsive within the figure element */
-    max-height: 150px; /* New: Constrains the height of the image to make it smaller */
-    width: auto; /* Ensures width scales with the height */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 10px; /* Optional: Adds rounded corners to the images */
+.date-and-genre {
+    display: flex;
+    justify-content: space-between; /* This will place date on the left and genre on the right */
+    align-items: center; /* To vertically center the contents */
+    width: 100%; /* Ensure the container spans the full width */
 }
-
-figcaption {
-    margin-top: 8px; /* Space between the image and its caption */
-    font-style: italic;
+.blog-date{
+    font-size: 16px;
     color: #666;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    margin-right: auto;
+    font-family: 'Lobster', cursive;
+}
+
+.blog-genre {
+    font-size: 16px;
+    color: #3944BC;
+    margin-bottom: 15px;
+    /* white-space: nowrap; Prevent genre from wrapping to a new line */
+    margin-left: auto;
+    margin-right: 30px;
+    font-weight: bold;
+    font-family: 'Ubuntu', cursive;
+}
+
+.blog-summary {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.blog-text {
+    flex: 1; /* Allows text to fill available space */
+    font-family: 'Libre Baskerville', cursive;
+}
+
+.blog-image {
+    width: 120px; /* Example width, adjust as necessary */
+    height: auto;
+    margin-left: 20px; /* Adds some space between the text and the image */
+    border-radius: 8px; /* Optional: rounds the corners of the image */
+}
+
+.date-and-genre {
+    display: flex;
+    justify-content: space-between; /* This will place date on the left and genre on the right */
+    align-items: center; /* To vertically center the contents */
+    width: 100%; /* Ensure the container spans the full width */
+}
+.paragraph-and-pic {
+    display: flex;
+    justify-content: space-between; /* This will place date on the left and genre on the right */
+    align-items: flex-start; /* To vertically center the contents */
+    width: 100%; /* Ensure the container spans the full width */
+}
+
+.blog-paragraph{
+    font-size: 16px;
+    line-height: 1.4;
+    color: #666;
+    /* margin-bottom: 15px; */
+    /* margin-right: auto; */
+    /* font-family: 'Lobster', cursive; */
+}
+
+.blog-pic-v {
+    float: right;
+    width: 200px; /* Example width, adjust as necessary */
+    height: auto;
+    margin-left: 20px; /* Adds some space between the text and the image */
+    border-radius: 8px; /* Optional: rounds the corners of the image */
+}
+
+.blog-pic-h {
+    float: right;
+    width: 300px; /* Example width, adjust as necessary */
+    height: auto;
+    margin-left: 20px; /* Adds some space between the text and the image */
+    border-radius: 8px; /* Optional: rounds the corners of the image */
 }
