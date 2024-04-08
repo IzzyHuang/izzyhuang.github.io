@@ -22,7 +22,7 @@ body {
 
 .blog-post-preview {
     display: flex;
-    align-items: center; /* Centers items vertically */
+    align-items: top; /* Centers items vertically */
     background: #fff;
     padding: 20px;
     margin: 20px 0;
@@ -51,7 +51,7 @@ body {
 .date-and-genre {
     display: flex;
     justify-content: space-between; /* This will place date on the left and genre on the right */
-    align-items: center; /* To vertically center the contents */
+    align-items: flex-start; /* To vertically center the contents */
     width: 100%; /* Ensure the container spans the full width */
 }
 .blog-date{
@@ -83,7 +83,7 @@ body {
 }
 
 .blog-image {
-    width: 120px; /* Example width, adjust as necessary */
+    width: 240px; /* Example width, adjust as necessary */
     height: auto;
     margin-left: 20px; /* Adds some space between the text and the image */
     border-radius: 8px; /* Optional: rounds the corners of the image */

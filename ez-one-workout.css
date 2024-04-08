@@ -20,6 +20,19 @@ body {
     margin: 0 auto;
 }
 
+.muscle-anatomy {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
 .blog-post-preview {
     display: flex;
     align-items: top; /* Centers items vertically */
@@ -38,41 +51,104 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.blog-title, .blog-day, .blog-genre, .blog-summary {
+.blog-title, .muscle-anatomy-title,.blog-date, .anatomy-day, .blog-label, .blog-genre, .blog-summary, .workout-type-1, .workout-type-2, .workout-type-3, .workout-type-4{
     margin: 0;
     padding: 0;
 }
 
-.blog-title {
+.muscle-anatomy-title{
     font-size: 40px;
-    margin-bottom: -15px;
+    font-family: 'Playfair Display', serif; 
+    text-align: center;
+}
+
+.blog-title {
+    font-size: 24;
+    margin-bottom: 10px;
     font-family: 'Playfair Display', serif; 
 }
 .date-and-genre {
     display: flex;
     justify-content: space-between; /* This will place day on the left and genre on the right */
-    align-items: center; /* To vertically center the contents */
+    align-items: top; /* To vertically center the contents */
     width: 100%; /* Ensure the container spans the full width */
 }
-.blog-date{
-    font-size: 24px;
+.anatomy-day{
+    font-size:20px;
     color: #666;
     margin-bottom: 15px;
-    margin-left: 15px;
     margin-right: auto;
     font-family: 'Lobster', cursive;
+    text-align: center;
 }
 
-.blog-genre {
-    font-size: 20px;
+.blog-date{
+    font-size:18px;
     color: #3944BC;
     margin-bottom: 15px;
-    margin-left: 30px;
-    /* white-space: nowrap; Prevent genre from wrapping to a new line */
+    margin-right: auto;
     font-weight: bold;
     font-family: 'Ubuntu', cursive;
 }
 
+.workout-type-1 {
+    font-size: 18px;
+    color: #800000;
+    margin-bottom: 15px;
+    /* white-space: nowrap; Prevent genre from wrapping to a new line */
+    margin-right: auto;
+    font-weight: bold;
+    font-family: 'Ubuntu', cursive;
+}
+
+.workout-type-2 {
+    font-size: 18px;
+    color: #008000;
+    margin-bottom: 15px;
+    /* white-space: nowrap; Prevent genre from wrapping to a new line */
+    margin-right: auto;
+    font-weight: bold;
+    font-family: 'Ubuntu', cursive;
+}
+
+.workout-type-3 {
+    font-size: 18px;
+    color: #000080;
+    margin-bottom: 15px;
+    /* white-space: nowrap; Prevent genre from wrapping to a new line */
+    margin-right: auto;
+    font-weight: bold;
+    font-family: 'Ubuntu', cursive;
+}
+
+.workout-type-4 {
+    font-size: 18px;
+    color: #800080;
+    margin-bottom: 15px;
+    /* white-space: nowrap; Prevent genre from wrapping to a new line */
+    margin-right: auto;
+    font-weight: bold;
+    font-family: 'Ubuntu', cursive;
+}
+
+.blog-genre {
+    font-size: 16px;
+    color: #3944BC;
+    margin-bottom: 15px;
+    /* white-space: nowrap; Prevent genre from wrapping to a new line */
+    margin-left: auto;
+    font-weight: bold;
+    font-family: 'Ubuntu', cursive;
+}
+.blog-label {
+    font-size: 28px;
+    color: #3944BC;
+    margin-bottom: 15px;
+    /* white-space: nowrap; Prevent genre from wrapping to a new line */
+    margin-left: auto;
+    font-weight: bold;
+    font-family: 'Ubuntu', cursive;
+}
 .blog-summary {
     font-size: 16px;
     line-height: 1.4;
@@ -99,7 +175,7 @@ body {
 
 .muscle-group {
     float: left;
-    width: 400px; /* Example width, adjust as necessary */
+    width: 150px; /* Example width, adjust as necessary */
     height: auto;
     margin-left: 20px; /* Adds some space between the text and the image */
     border-radius: 8px; /* Optional: rounds the corners of the image */
