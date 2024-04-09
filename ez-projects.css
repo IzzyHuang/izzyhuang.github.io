@@ -88,3 +88,51 @@ body {
     margin-left: 20px; /* Adds some space between the text and the image */
     border-radius: 8px; /* Optional: rounds the corners of the image */
 }
+
+
+@media screen and (max-width: 768px) {
+    .blog-posts {
+        /* Narrower screens might benefit from reduced or no side margins to utilize space better */
+        margin: 10px;
+    }
+
+    .blog-post-preview {
+        /* On smaller screens, stack elements vertically */
+        flex-direction: column;
+        padding: 15px; /* Slightly reduce padding to fit smaller screens */
+        align-items: center; /* Center-align items for a cohesive look */
+    }
+
+    .blog-title {
+        font-size: 20px; /* Reduce the font size for smaller screens */
+        margin-bottom: 8px; /* Adjust bottom margin for spacing */
+    }
+
+    .date-and-genre {
+        /* Adjust layout for date and genre information */
+        flex-direction: column;
+        align-items: center; /* Align items centrally for a more organized appearance */
+        margin-bottom: 10px; /* Provide more spacing between elements */
+    }
+
+    .blog-date, .blog-genre {
+        font-size: 14px; /* Decrease font size for date and genre to fit mobile screens */
+        margin-bottom: 5px; /* Adjust margins to reduce space between elements */
+    }
+
+    .blog-summary {
+        font-size: 14px; /* Adjust font size for readability on smaller screens */
+        line-height: 1.3; /* Tighten the line height for space efficiency */
+        text-align: justify; /* Optional: Justify text for a cleaner look */
+    }
+
+    .blog-text {
+        /* Adjustments to the blog text container might not be necessary, but consider padding adjustments */
+    }
+
+    .blog-image {
+        width: 100%; /* Make images full width to adapt to screen size */
+        height: auto; /* Maintain aspect ratio */
+        margin: 10px 0; /* Adjust margin for vertical layout */
+    }
+}

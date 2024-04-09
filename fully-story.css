@@ -125,3 +125,40 @@ body {
     margin-left: 20px; /* Adds some space between the text and the image */
     border-radius: 8px; /* Optional: rounds the corners of the image */
 }
+
+@media screen and (max-width: 768px) {
+    .blog-posts {
+        /* Reduce or remove margins for a full-width effect on smaller screens */
+        margin: 10px 5px;
+    }
+
+    .blog-post-preview, .paragraph-and-pic {
+        /* Switch to a vertical layout for the blog post previews and paragraph-pic combinations */
+        flex-direction: column;
+        align-items: center; /* Center-align items for a cleaner, more streamlined look */
+        padding: 15px; /* Adjust padding to fit smaller screens */
+    }
+
+    .blog-title, .blog-date, .blog-genre, .blog-summary, .section-heading, .blog-paragraph {
+        font-size: 14px; /* Slightly reduce the font size for better readability on smaller screens */
+        margin-bottom: 8px; /* Adjust spacing between elements */
+    }
+
+    .blog-genre {
+        margin-right: 0px; /* Adjust genre margin for alignment */
+    }
+
+    .blog-image, .blog-pic-v, .blog-pic-h {
+        width: 100%; /* Make images full width to adapt to screen size */
+        height: auto; /* Maintain aspect ratio */
+        margin: 10px 0; /* Adjust margin for vertical stacking */
+        float: none; /* Disable floating for images to stack them properly */
+    }
+
+    .date-and-genre, .paragraph-and-pic {
+        /* Adjust layout for these containers to better fit mobile screens */
+        flex-direction: column;
+        align-items: center; /* Center-align the items for a neater appearance */
+    }
+
+}
