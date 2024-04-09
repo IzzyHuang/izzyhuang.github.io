@@ -93,7 +93,7 @@ body {
 
 .workout-type-1 {
     font-size: 18px;
-    color: #800000;
+    color: #ECB753;
     margin-bottom: 15px;
     /* white-space: nowrap; Prevent genre from wrapping to a new line */
     margin-right: auto;
@@ -103,7 +103,7 @@ body {
 
 .workout-type-2 {
     font-size: 18px;
-    color: #008000;
+    color: #1167b1;
     margin-bottom: 15px;
     /* white-space: nowrap; Prevent genre from wrapping to a new line */
     margin-right: auto;
@@ -113,7 +113,7 @@ body {
 
 .workout-type-3 {
     font-size: 18px;
-    color: #000080;
+    color: #B90E0A;
     margin-bottom: 15px;
     /* white-space: nowrap; Prevent genre from wrapping to a new line */
     margin-right: auto;
@@ -123,7 +123,7 @@ body {
 
 .workout-type-4 {
     font-size: 18px;
-    color: #800080;
+    color: #03C04A;
     margin-bottom: 15px;
     /* white-space: nowrap; Prevent genre from wrapping to a new line */
     margin-right: auto;
