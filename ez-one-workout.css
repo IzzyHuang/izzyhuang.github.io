@@ -180,3 +180,37 @@ body {
     margin-left: 20px; /* Adds some space between the text and the image */
     border-radius: 8px; /* Optional: rounds the corners of the image */
 }
+/* Existing CSS stays as it is */
+
+/* Responsive adjustments for mobile devices */
+@media screen and (max-width: 768px) {
+    body {
+        /* Optional: Adjust the base font size for smaller screens if needed */
+    }
+
+    .blog-posts, .muscle-anatomy, .blog-post-preview {
+        padding: 10px; /* Reduce padding */
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .muscle-anatomy-title, .blog-title, .anatomy-day, .blog-date, .workout-type-1, .workout-type-2, .workout-type-3, .workout-type-4, .blog-genre, .blog-label {
+        font-size: 16px; /* Adjust font sizes for readability on small screens */
+        text-align: center; /* Center-align text for a cleaner look on mobile */
+        margin-bottom: 10px; /* Adjust margins */
+    }
+
+    .date-and-genre, .muscle-and-description {
+        flex-direction: column; /* Adjust layout to stack information vertically */
+        margin-bottom: 10px;
+    }
+
+    .blog-image, .muscle-group {
+        width: 100%; /* Make images full width */
+        height: auto; /* Adjust height automatically */
+        margin: 10px 0; /* Adjust margins around images */
+    }
+
+    .blog-text, .blog-summary {
+        /* Adjust text alignment or padding if necessary */
+    }
+}

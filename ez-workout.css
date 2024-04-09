@@ -104,3 +104,38 @@ body {
     margin-left: 20px; /* Adds some space between the text and the image */
     border-radius: 8px; /* Optional: rounds the corners of the image */
 }
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    body {
+        /* Adjust body font size if necessary */
+        font-size: 14px; /* Example adjustment */
+    }
+
+    .blog-posts {
+        padding: 10px; /* Adds some padding on smaller screens */
+    }
+
+    .blog-post-preview {
+        flex-direction: column; /* Stacks elements vertically on smaller screens */
+        padding: 10px;
+    }
+
+    .blog-title {
+        font-size: 24px; /* Smaller font size for the title on small screens */
+    }
+
+    .date-and-genre, .muscle-and-description {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the start for a vertical layout */
+    }
+
+    .blog-date, .blog-genre {
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+
+    .blog-image, .muscle-group {
+        width: 100%; /* Full width images on small screens */
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+}
